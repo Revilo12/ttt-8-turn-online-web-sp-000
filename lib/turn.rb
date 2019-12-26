@@ -10,6 +10,11 @@ def turn(board)
   end
 end
 
+def input_to_index(input)
+  input = input.to_i
+  index = input - 1
+end
+
 def display_board(boardIn)
   if boardIn == nil
     puts "That was an unacceptable input"
