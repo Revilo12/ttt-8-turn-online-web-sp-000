@@ -1,3 +1,8 @@
+def execute(board)
+  9.times do
+    turn(board)
+  end
+  
 def turn(board)
   puts "Please enter 1-9:"
   index = gets.strip - 1
@@ -6,6 +11,7 @@ def turn(board)
   else
     puts "Please enter a valid input"
     turn(board)
+  end
 end
 
 def display_board(boardIn)
