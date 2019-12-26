@@ -7,6 +7,7 @@ def turn(board)
     puts "Please enter a valid input"
     turn(board)
 end
+
 def display_board(boardIn)
   if boardIn == nil
     puts "That was an unacceptable input"
