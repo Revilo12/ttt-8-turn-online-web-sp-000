@@ -1,8 +1,3 @@
-def execute(board)
-  9.times do
-    turn(board)
-  end
-  
 def turn(board)
   puts "Please enter 1-9:"
   index = gets.strip - 1
@@ -29,6 +24,7 @@ end
 def move(boardIn, input_index, character = "X")
   boardIn[input_index] = character
   return boardIn
+end
 
 # code your #valid_move? method here
 def valid_move?(board, index)
